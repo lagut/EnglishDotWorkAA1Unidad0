@@ -872,7 +872,7 @@ package clases
 					[800,240],[250,240]
 				],
 				[
-					[814,397],[339,397]
+					[814,397],[330,397]
 				]
 			);
 			_compareJuegoObservador = Arrays.fill(false,_cantidadElementosObservar.length);
@@ -908,7 +908,7 @@ package clases
 			CodeCraft.stopFrame(_elementosObservarMover, "normal");
 			CodeCraft.property(_elementosObservarObjetivo,{alpha: 0});
 			Texts.load(_elementosObservarMover,_message.escenaObservar[_posicionJuegoObservar]);
-			Collision.load(_elementosObservarMover, _elementosObservarObjetivo, _posicionElementosObservar[_posicionJuegoObservar], ["y",33,1,4] ,null, _movieClip.rutaJuego.compare, _retornoObservar);
+			Collision.load(_elementosObservarMover, _elementosObservarObjetivo, _posicionElementosObservar[_posicionJuegoObservar], ["y",33,1,4] ,null, _movieClip.rutaJuego.compare, _retornoObservar,_message.escenaObservar[_posicionJuegoObservar]);
 			listenerObservar2();
 		}
 		
