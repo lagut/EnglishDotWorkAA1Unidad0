@@ -47,19 +47,6 @@ package clases
 		public var popUpBotonesMenu:MovieClip = null;
 		public var ventanaInstrucciones:MovieClip;
 		
-		//---variables de la actividad Completar---
-		public var numeropalabra:int = 1;
-		public var contadorbuenos = 0;
-		public var TextosCorrectos:Array=new Array();
-		public var ArrayCajas:Array=new Array();
-		public var texto:TextField=new TextField();
-		public var ref:int;
-		public var estilo:StyleSheet = new StyleSheet();
-		public var temporal:Array=new Array();
-		public var busqueda:Array = new Array();
-		public var instanciaBoton:MovieClip;
-		//public var myTextFormat:TextFormat = new TextFormat();
-		//-----------------------------------------------------------------
 		private var _posicionMenu:Array = new Array(500,45);
 		public var botonesMenu:Array = new Array(
 			menuPrincipal.botonSonido,

@@ -20,6 +20,7 @@ package clases
 	import codeCraft.display.Menu;
 	import codeCraft.events.Events;
 	import codeCraft.media.Audio;
+	import codeCraft.text.CheckInput;
 	import codeCraft.text.Texts;
 	import codeCraft.utils.Arrays;
 	import codeCraft.utils.Collision;
@@ -204,15 +205,7 @@ package clases
 		}
 		
 		
-		
-		
-		/****************************************************************************************
-		*
-		* Actividad de completar
-		*
-		****************************************************************************************/
-		
-		
+
 		/****************************************************************************************
 		*
 		* Listener de los botones del menu
@@ -332,194 +325,194 @@ package clases
 			
 		};
 		
-//		public function animarEscenas(escena:int):void{
-//			switch(escena){
-//				case 1:
-//					TweenMax.to(Escena1,1.2,{scaleX:7,scaleY:7,x:-3062,y:-3031});
-//					break;
-//				case 2:
-//					TweenMax.to(Escena1,1.2,{scaleX:2.9,scaleY:2.9,x:-1277,y:-880});
-//					break;
-//				case 3:
-//					TweenMax.to(Escena1,4.2,{scaleX:2.9,scaleY:2.9,x:-1569,y:-880});
-//					break;
-//				case 4:
-//					TweenMax.to(Escena1,1.2,{scaleX:7,scaleY:7,x:-4380,y:-3100});
-//					break;
-//				case 5:
-//					TweenMax.to(Escena1,1.2,{scaleX:2.9,scaleY:2.9,x:-1256,y:-919});
-//					break;
-//				case 6:
-//					TweenMax.to(Escena1,1.2,{scaleX:7,scaleY:7,x:-4380,y:-3040});
-//					break;
-//				case 7:
-//					TweenMax.to(Escena1,3.8,{scaleX:7,scaleY:7,x:-3800,y:-2900});
-//					break;
-//				case 8:
-//					TweenMax.to(Escena1,3,{scaleX:1,scaleY:1,x:0,y:0});
-//					trace("final de la animacion");
-//					audioEscenaAudioCompleto();
-//					break;
-//				
-//			}
-//		}
-//		
-//		public function nextEscena():void{
-//			inicialEscena++;
-//			animarEscenas(inicialEscena);
-//		}
-//		
-//		public function detectar(e:Event):void{
-//			//Eventos Animacion Gestos Escenas
-//			if(Escena1.escena.currentFrame == 240){
-//				Escena1.escena.yoko.cabeza.cabeza.boca.gotoAndPlay(2);
-//				Escena1.escena.yoko.cabeza.cabeza.ojos.ojo1.gotoAndPlay(2);
-//				Escena1.escena.yoko.cabeza.cabeza.ojos.ojo2.gotoAndPlay(2);
-//			}
-//			
-//			if(Escena1.escena.currentFrame == 291){
-//				Escena1.escena.carola.cabeza.cabeza.boca.gotoAndPlay(2);
-//				Escena1.escena.carola.cabeza.cabeza.ojos.ojo1.gotoAndPlay(2);
-//				Escena1.escena.carola.cabeza.cabeza.ojos.ojo2.gotoAndPlay(2);
-//				Escena1.escena.carola.cabeza.gotoAndPlay(2);
-//				Escena1.escena.carola.pelo.gotoAndPlay(2);		
-//				
-//				
-//			}
-//			if(Escena1.escena.currentFrame == 439){
-//				Escena1.escena.yoko.cabeza.cabeza.boca.gotoAndPlay(2);
-//				Escena1.escena.yoko.cabeza.cabeza.ojos.ojo1.gotoAndPlay(2);
-//				Escena1.escena.yoko.cabeza.cabeza.ojos.ojo2.gotoAndPlay(2);
-//			}
-//			if(Escena1.escena.currentFrame == 543){
-//				Escena1.escena.carola.cabeza.cabeza.boca.gotoAndPlay(2);
-//				Escena1.escena.carola.cabeza.cabeza.ojos.ojo1.gotoAndPlay(2);
-//				Escena1.escena.carola.cabeza.cabeza.ojos.ojo2.gotoAndPlay(2);
-//				Escena1.escena.carola.cabeza.gotoAndPlay(2);
-//				Escena1.escena.carola.pelo.gotoAndPlay(2);
-//				
-//			}
-//			if(Escena1.escena.currentFrame == 625){
-//				Escena1.escena.yoko.cabeza.cabeza.boca.gotoAndPlay(2);
-//				Escena1.escena.yoko.cabeza.cabeza.ojos.ojo1.gotoAndPlay(2);
-//				Escena1.escena.yoko.cabeza.cabeza.ojos.ojo2.gotoAndPlay(2);
-//			}
-//			if(Escena1.escena.currentFrame == 704){
-//				Escena1.escena.carola.cabeza.cabeza.boca.gotoAndPlay(2);
-//				Escena1.escena.carola.cabeza.cabeza.ojos.ojo1.gotoAndPlay(2);
-//				Escena1.escena.carola.cabeza.cabeza.ojos.ojo2.gotoAndPlay(2);
-//				Escena1.escena.carola.cabeza.gotoAndPlay(2);
-//				Escena1.escena.carola.pelo.gotoAndPlay(2);
-//			}
-//			if(Escena1.escena.currentFrame == 794){
-//				Escena1.escena.yoko.cabeza.cabeza.boca.gotoAndPlay(2);
-//				Escena1.escena.yoko.cabeza.cabeza.ojos.ojo1.gotoAndPlay(2);
-//				Escena1.escena.yoko.cabeza.cabeza.ojos.ojo2.gotoAndPlay(2);
-//			}
-//			if(Escena1.escena.currentFrame == 1031){
-//				Escena1.escena.kevin.ojos.ojo1.gotoAndPlay(2);
-//				Escena1.escena.kevin.ojos.ojo2.gotoAndPlay(2);
-//				Escena1.escena.kevin.boca.gotoAndPlay(2);
-//			}
-//			if(Escena1.escena.currentFrame == 1081){
-//				Escena1.escena.carola.cabeza.cabeza.boca.gotoAndPlay(2);
-//				Escena1.escena.carola.cabeza.cabeza.ojos.ojo1.gotoAndPlay(2);
-//				Escena1.escena.carola.cabeza.cabeza.ojos.ojo2.gotoAndPlay(2);
-//				Escena1.escena.carola.cabeza.gotoAndPlay(2);
-//				Escena1.escena.carola.pelo.gotoAndPlay(2);
-//			}
-//			if(Escena1.escena.currentFrame == 1031){
-//				Escena1.escena.kevin.ojos.ojo1.gotoAndPlay(2);
-//				Escena1.escena.kevin.ojos.ojo2.gotoAndPlay(2);
-//				Escena1.escena.kevin.boca.gotoAndPlay(2);
-//			}
-//			if(Escena1.escena.currentFrame == 1188){
-//				Escena1.escena.kevin.ojos.ojo1.gotoAndPlay(2);
-//				Escena1.escena.kevin.ojos.ojo2.gotoAndPlay(2);
-//				Escena1.escena.kevin.boca.gotoAndPlay(2);
-//			}
-//			if(Escena1.escena.currentFrame == 1225){
-//				Escena1.escena.angelo.ojos.ojo1.gotoAndPlay(2);
-//				Escena1.escena.angelo.ojos.ojo2.gotoAndPlay(2);
-//				Escena1.escena.angelo.boca.gotoAndPlay(2);
-//			}
-//			if(Escena1.escena.currentFrame == 1327){
-//				Escena1.escena.carola.cabeza.cabeza.boca.gotoAndPlay(2);
-//				Escena1.escena.carola.cabeza.cabeza.ojos.ojo1.gotoAndPlay(2);
-//				Escena1.escena.carola.cabeza.cabeza.ojos.ojo2.gotoAndPlay(2);
-//				Escena1.escena.carola.cabeza.gotoAndPlay(2);
-//				Escena1.escena.carola.pelo.gotoAndPlay(2);
-//			}
-//			if(Escena1.escena.currentFrame == 1365){
-//				Escena1.escena.carola.cabeza.cabeza.ojos.ojo1.gotoAndPlay(2);
-//				Escena1.escena.carola.cabeza.cabeza.ojos.ojo2.gotoAndPlay(2);
-//				Escena1.escena.carola.cabeza.gotoAndPlay(2);
-//				Escena1.escena.carola.pelo.gotoAndPlay(2);
-//			}
-//			if(Escena1.escena.currentFrame == 1393){
-//				Escena1.escena.carola.cabeza.cabeza.boca.gotoAndPlay(2);
-//				Escena1.escena.carola.cabeza.cabeza.ojos.ojo1.gotoAndPlay(2);
-//				Escena1.escena.carola.cabeza.cabeza.ojos.ojo2.gotoAndPlay(2);
-//				Escena1.escena.carola.cabeza.gotoAndPlay(2);
-//				Escena1.escena.carola.pelo.gotoAndPlay(2);
-//			}
-//			if(Escena1.escena.currentFrame == 1415){
-//				Escena1.escena.kevin.ojos.ojo1.gotoAndPlay(2);
-//				Escena1.escena.kevin.ojos.ojo2.gotoAndPlay(2);
-//				Escena1.escena.kevin.boca.gotoAndPlay(2);
-//			}
-//			if(Escena1.escena.currentFrame == 1454){
-//				Escena1.escena.angelo.ojos.ojo1.gotoAndPlay(2);
-//				Escena1.escena.angelo.ojos.ojo2.gotoAndPlay(2);
-//				Escena1.escena.angelo.boca.gotoAndPlay(2);
-//			}
-//			if(Escena1.escena.currentFrame == 1574){
-//				Escena1.escena.yoko.cabeza.cabeza.boca.gotoAndPlay(2);
-//				Escena1.escena.yoko.cabeza.cabeza.ojos.ojo1.gotoAndPlay(2);
-//				Escena1.escena.yoko.cabeza.cabeza.ojos.ojo2.gotoAndPlay(2);
-//			}
-//			if(Escena1.escena.currentFrame == 1643){
-//				Escena1.escena.kevin.ojos.ojo1.gotoAndPlay(2);
-//				Escena1.escena.kevin.ojos.ojo2.gotoAndPlay(2);
-//				Escena1.escena.kevin.boca.gotoAndPlay(2);
-//			}
-//			
-//			//Eventos Animacion Movimiento de camara.
-//			if(Escena1.escena.currentFrame==60){
-//				animarEscenas(inicialEscena);
-//			}
-//			if(Escena1.escena.currentFrame==101){
-//				inicialEscena++;
-//				animarEscenas(inicialEscena);
-//			}
-//			if(Escena1.escena.currentFrame==291){
-//				inicialEscena++;
-//				animarEscenas(inicialEscena);
-//			}
-//			if(Escena1.escena.currentFrame==385){
-//				inicialEscena++;
-//				animarEscenas(inicialEscena);
-//			}
-//			if(Escena1.escena.currentFrame==776){
-//				inicialEscena++;
-//				animarEscenas(inicialEscena);
-//			}
-//			if(Escena1.escena.currentFrame==989){
-//				inicialEscena++;
-//				animarEscenas(inicialEscena);
-//			}
-//			if(Escena1.escena.currentFrame==1661){
-//				inicialEscena++;
-//				animarEscenas(inicialEscena);
-//			}
-//			if(Escena1.escena.currentFrame==1780){
-//				inicialEscena++;
-//				animarEscenas(inicialEscena);//Escena1.escena.stop();
-//				
-//				Escena1.escena.removeEventListener(Event.ENTER_FRAME,detectar);
-//			}
-//		}
-//		
+		public function animarEscenas(escena:int):void{
+			switch(escena){
+				case 1:
+					TweenMax.to(Escena1,1.2,{scaleX:7,scaleY:7,x:-3062,y:-3031});
+					break;
+				case 2:
+					TweenMax.to(Escena1,1.2,{scaleX:2.9,scaleY:2.9,x:-1277,y:-880});
+					break;
+				case 3:
+					TweenMax.to(Escena1,4.2,{scaleX:2.9,scaleY:2.9,x:-1569,y:-880});
+					break;
+				case 4:
+					TweenMax.to(Escena1,1.2,{scaleX:7,scaleY:7,x:-4380,y:-3100});
+					break;
+				case 5:
+					TweenMax.to(Escena1,1.2,{scaleX:2.9,scaleY:2.9,x:-1256,y:-919});
+					break;
+				case 6:
+					TweenMax.to(Escena1,1.2,{scaleX:7,scaleY:7,x:-4380,y:-3040});
+					break;
+				case 7:
+					TweenMax.to(Escena1,3.8,{scaleX:7,scaleY:7,x:-3800,y:-2900});
+					break;
+				case 8:
+					TweenMax.to(Escena1,3,{scaleX:1,scaleY:1,x:0,y:0});
+					trace("final de la animacion");
+					audioEscenaAudioCompleto();
+					break;
+				
+			}
+		}
+		
+		public function nextEscena():void{
+			inicialEscena++;
+			animarEscenas(inicialEscena);
+		}
+		
+		public function detectar(e:Event):void{
+			//Eventos Animacion Gestos Escenas
+			if(Escena1.escena.currentFrame == 240){
+				Escena1.escena.yoko.cabeza.cabeza.boca.gotoAndPlay(2);
+				Escena1.escena.yoko.cabeza.cabeza.ojos.ojo1.gotoAndPlay(2);
+				Escena1.escena.yoko.cabeza.cabeza.ojos.ojo2.gotoAndPlay(2);
+			}
+			
+			if(Escena1.escena.currentFrame == 291){
+				Escena1.escena.carola.cabeza.cabeza.boca.gotoAndPlay(2);
+				Escena1.escena.carola.cabeza.cabeza.ojos.ojo1.gotoAndPlay(2);
+				Escena1.escena.carola.cabeza.cabeza.ojos.ojo2.gotoAndPlay(2);
+				Escena1.escena.carola.cabeza.gotoAndPlay(2);
+				Escena1.escena.carola.pelo.gotoAndPlay(2);		
+				
+				
+			}
+			if(Escena1.escena.currentFrame == 439){
+				Escena1.escena.yoko.cabeza.cabeza.boca.gotoAndPlay(2);
+				Escena1.escena.yoko.cabeza.cabeza.ojos.ojo1.gotoAndPlay(2);
+				Escena1.escena.yoko.cabeza.cabeza.ojos.ojo2.gotoAndPlay(2);
+			}
+			if(Escena1.escena.currentFrame == 543){
+				Escena1.escena.carola.cabeza.cabeza.boca.gotoAndPlay(2);
+				Escena1.escena.carola.cabeza.cabeza.ojos.ojo1.gotoAndPlay(2);
+				Escena1.escena.carola.cabeza.cabeza.ojos.ojo2.gotoAndPlay(2);
+				Escena1.escena.carola.cabeza.gotoAndPlay(2);
+				Escena1.escena.carola.pelo.gotoAndPlay(2);
+				
+			}
+			if(Escena1.escena.currentFrame == 625){
+				Escena1.escena.yoko.cabeza.cabeza.boca.gotoAndPlay(2);
+				Escena1.escena.yoko.cabeza.cabeza.ojos.ojo1.gotoAndPlay(2);
+				Escena1.escena.yoko.cabeza.cabeza.ojos.ojo2.gotoAndPlay(2);
+			}
+			if(Escena1.escena.currentFrame == 704){
+				Escena1.escena.carola.cabeza.cabeza.boca.gotoAndPlay(2);
+				Escena1.escena.carola.cabeza.cabeza.ojos.ojo1.gotoAndPlay(2);
+				Escena1.escena.carola.cabeza.cabeza.ojos.ojo2.gotoAndPlay(2);
+				Escena1.escena.carola.cabeza.gotoAndPlay(2);
+				Escena1.escena.carola.pelo.gotoAndPlay(2);
+			}
+			if(Escena1.escena.currentFrame == 794){
+				Escena1.escena.yoko.cabeza.cabeza.boca.gotoAndPlay(2);
+				Escena1.escena.yoko.cabeza.cabeza.ojos.ojo1.gotoAndPlay(2);
+				Escena1.escena.yoko.cabeza.cabeza.ojos.ojo2.gotoAndPlay(2);
+			}
+			if(Escena1.escena.currentFrame == 1031){
+				Escena1.escena.kevin.ojos.ojo1.gotoAndPlay(2);
+				Escena1.escena.kevin.ojos.ojo2.gotoAndPlay(2);
+				Escena1.escena.kevin.boca.gotoAndPlay(2);
+			}
+			if(Escena1.escena.currentFrame == 1081){
+				Escena1.escena.carola.cabeza.cabeza.boca.gotoAndPlay(2);
+				Escena1.escena.carola.cabeza.cabeza.ojos.ojo1.gotoAndPlay(2);
+				Escena1.escena.carola.cabeza.cabeza.ojos.ojo2.gotoAndPlay(2);
+				Escena1.escena.carola.cabeza.gotoAndPlay(2);
+				Escena1.escena.carola.pelo.gotoAndPlay(2);
+			}
+			if(Escena1.escena.currentFrame == 1031){
+				Escena1.escena.kevin.ojos.ojo1.gotoAndPlay(2);
+				Escena1.escena.kevin.ojos.ojo2.gotoAndPlay(2);
+				Escena1.escena.kevin.boca.gotoAndPlay(2);
+			}
+			if(Escena1.escena.currentFrame == 1188){
+				Escena1.escena.kevin.ojos.ojo1.gotoAndPlay(2);
+				Escena1.escena.kevin.ojos.ojo2.gotoAndPlay(2);
+				Escena1.escena.kevin.boca.gotoAndPlay(2);
+			}
+			if(Escena1.escena.currentFrame == 1225){
+				Escena1.escena.angelo.ojos.ojo1.gotoAndPlay(2);
+				Escena1.escena.angelo.ojos.ojo2.gotoAndPlay(2);
+				Escena1.escena.angelo.boca.gotoAndPlay(2);
+			}
+			if(Escena1.escena.currentFrame == 1327){
+				Escena1.escena.carola.cabeza.cabeza.boca.gotoAndPlay(2);
+				Escena1.escena.carola.cabeza.cabeza.ojos.ojo1.gotoAndPlay(2);
+				Escena1.escena.carola.cabeza.cabeza.ojos.ojo2.gotoAndPlay(2);
+				Escena1.escena.carola.cabeza.gotoAndPlay(2);
+				Escena1.escena.carola.pelo.gotoAndPlay(2);
+			}
+			if(Escena1.escena.currentFrame == 1365){
+				Escena1.escena.carola.cabeza.cabeza.ojos.ojo1.gotoAndPlay(2);
+				Escena1.escena.carola.cabeza.cabeza.ojos.ojo2.gotoAndPlay(2);
+				Escena1.escena.carola.cabeza.gotoAndPlay(2);
+				Escena1.escena.carola.pelo.gotoAndPlay(2);
+			}
+			if(Escena1.escena.currentFrame == 1393){
+				Escena1.escena.carola.cabeza.cabeza.boca.gotoAndPlay(2);
+				Escena1.escena.carola.cabeza.cabeza.ojos.ojo1.gotoAndPlay(2);
+				Escena1.escena.carola.cabeza.cabeza.ojos.ojo2.gotoAndPlay(2);
+				Escena1.escena.carola.cabeza.gotoAndPlay(2);
+				Escena1.escena.carola.pelo.gotoAndPlay(2);
+			}
+			if(Escena1.escena.currentFrame == 1415){
+				Escena1.escena.kevin.ojos.ojo1.gotoAndPlay(2);
+				Escena1.escena.kevin.ojos.ojo2.gotoAndPlay(2);
+				Escena1.escena.kevin.boca.gotoAndPlay(2);
+			}
+			if(Escena1.escena.currentFrame == 1454){
+				Escena1.escena.angelo.ojos.ojo1.gotoAndPlay(2);
+				Escena1.escena.angelo.ojos.ojo2.gotoAndPlay(2);
+				Escena1.escena.angelo.boca.gotoAndPlay(2);
+			}
+			if(Escena1.escena.currentFrame == 1574){
+				Escena1.escena.yoko.cabeza.cabeza.boca.gotoAndPlay(2);
+				Escena1.escena.yoko.cabeza.cabeza.ojos.ojo1.gotoAndPlay(2);
+				Escena1.escena.yoko.cabeza.cabeza.ojos.ojo2.gotoAndPlay(2);
+			}
+			if(Escena1.escena.currentFrame == 1643){
+				Escena1.escena.kevin.ojos.ojo1.gotoAndPlay(2);
+				Escena1.escena.kevin.ojos.ojo2.gotoAndPlay(2);
+				Escena1.escena.kevin.boca.gotoAndPlay(2);
+			}
+			
+			//Eventos Animacion Movimiento de camara.
+			if(Escena1.escena.currentFrame==60){
+				animarEscenas(inicialEscena);
+			}
+			if(Escena1.escena.currentFrame==101){
+				inicialEscena++;
+				animarEscenas(inicialEscena);
+			}
+			if(Escena1.escena.currentFrame==291){
+				inicialEscena++;
+				animarEscenas(inicialEscena);
+			}
+			if(Escena1.escena.currentFrame==385){
+				inicialEscena++;
+				animarEscenas(inicialEscena);
+			}
+			if(Escena1.escena.currentFrame==776){
+				inicialEscena++;
+				animarEscenas(inicialEscena);
+			}
+			if(Escena1.escena.currentFrame==989){
+				inicialEscena++;
+				animarEscenas(inicialEscena);
+			}
+			if(Escena1.escena.currentFrame==1661){
+				inicialEscena++;
+				animarEscenas(inicialEscena);
+			}
+			if(Escena1.escena.currentFrame==1780){
+				inicialEscena++;
+				animarEscenas(inicialEscena);//Escena1.escena.stop();
+				
+				Escena1.escena.removeEventListener(Event.ENTER_FRAME,detectar);
+			}
+		}
+		
 		
 
 		public function iniciarEscenaInicioAnimacion():void 
@@ -653,9 +646,9 @@ package clases
 			//Audio.playAudio(AudioClass.audioEscenas[escenaActual],0);
 			//Audio.playComplete(0,audioEscenaAudioCompleto);
 			
-//			Escena1 = _movieClip.escenario;
-//			Escena1.escena.play();
-//			Escena1.escena.addEventListener(Event.ENTER_FRAME,detectar);
+			Escena1 = _movieClip.escenario;
+			Escena1.escena.play();
+			Escena1.escena.addEventListener(Event.ENTER_FRAME,detectar);
 		}
 		
 		
@@ -1032,6 +1025,9 @@ package clases
 		private var _computadorCargado:Boolean = false;
 		/* Cambia la posicion de los juegos internos del compuntador 3 */
 		private var _posicionJuegoComputador3:int = 0;
+		/* Almacena las instancias de los input text */
+		private var _cajaTextos:Array;
+		
 		
 		public function valoresVariablesComputador ():void 
 		{
@@ -1065,7 +1061,7 @@ package clases
 				[]
 			);
 			//se agrega la cantidad de compares que debe tener mirando la posicion del juego y comparando con el tamaño del array de posiciones
-			var cantidadCompareJuego:Array = new Array(1,1,2);
+			var cantidadCompareJuego:Array = new Array(1,1,2,1);
 			_compareCargadosComputador = Arrays.fill(false,cantidadCompareJuego[_posicionJuegoComputador]);
 			_retornoComputador = new Array(600, 1000);
 			_movieClip.rutaJuego.compare.alpha = 0;
@@ -1102,12 +1098,13 @@ package clases
 			Timers.timer(2.2,cargarComputadorPresentacion);
 		}
 		
+		/**
+		 * 
+		 */
 		public function iniciarComputador4():void
 		{
-                    trace("Carga mi escena mirringo");
 			valoresVariablesComputador();
-			//Timers.timer(2.2,cargarImanComputador);
-			//Timers.timer(2.2,cargarCompletarComputador);
+			Timers.timer(2.2,cargarCompletarComputador);
 		}
 		
 		public function iniciarComputador5():void
@@ -1265,7 +1262,7 @@ package clases
 			//se detecta si es el boton de otra escena diferente y se carga esta
 			var posicionEscena:int = (Arrays.indexOf(_escene.escenasMultimedia, escenaActual) + 1);
 			//el if cancela la carga de las otras actividades y adelanta la escena es temporal mientras se solucionan problemas de la actividad
-			if(_escene.escenasMultimedia[posicionEscena] == "computador4")
+			if(_escene.escenasMultimedia[posicionEscena] == "computador5")
 			{
 				_juegoComputadorCompleto = true;
 				_animation.juegoOut();
@@ -1286,165 +1283,22 @@ package clases
 		}
 		
 		
-		///****************************************************************************************
-		//*
-		//* Seccion para cargar la actividad la actividad de Completar.
-		//*
-		//****************************************************************************************/
+		private function cargarCompletarComputador():void 
+		{
+			_cajaTextos = new Array(
+				_movieClip.rutaJuego.presentacion.texto1,
+				_movieClip.rutaJuego.presentacion.texto2,
+				_movieClip.rutaJuego.presentacion.texto3,
+				_movieClip.rutaJuego.presentacion.texto4,
+				_movieClip.rutaJuego.presentacion.texto5,
+				_movieClip.rutaJuego.presentacion.texto6,
+				_movieClip.rutaJuego.presentacion.texto7
+			);
+			_movieClip.rutaJuego.presentacion.visible = true;
+			CodeCraft.property(_movieClip.rutaJuego.compare,{alpha: 0.3});
+			CheckInput.load(_cajaTextos,_message.escenaComputador[_posicionJuegoComputador][0],5,_movieClip.rutaJuego.compare);
+		}
 		
-		//
-		//
-//		/*public function cargarCompletarComputador():void
-//		{
-//		trace("completar configurar");
-//		
-//		var TextosCorrectos1:Array=new Array("I","I","I","I","he","you","I");
-//		var ArrayCajas1:Array=new Array(_movieClip.rutaJuego.presentacion.CajaTexto1,_movieClip.rutaJuego.presentacion.CajaTexto2,_movieClip.rutaJuego.presentacion.CajaTexto3,_movieClip.rutaJuego.presentacion.CajaTexto4,_movieClip.rutaJuego.presentacion.CajaTexto5,_movieClip.rutaJuego.presentacion.CajaTexto6,_movieClip.rutaJuego.presentacion.CajaTexto7);
-//		CodeCraft.getMainObject().stage.focus = ArrayCajas1[0];
-//		/* se le pasa  el array con las palabras correctas*/
-//		CargarTextosCorrectos(TextosCorrectos1);
-//		/*Se le pasa las instacias de las cajas que se le van a testear*/
-//		CargarInstanciasCajas(ArrayCajas1);
-//		/*Configuramos las cajas de texto para que solo permita una cierta cantidad de cararacteres,
-//		solo la palabras indicadas,se pasa la instancia del boton que va a realizar el procceso de
-//		validacion y la palabra si lo requiere que le permita ingresar pero la toma como mala*/
-//		ConfigurarCajas(4,TextosCorrectos1,_movieClip.rutaJuego.compare,"she");	
-//		}
-//		
-//		
-//		
-//		public  function CargarTextosCorrectos(Textos:Array):void
-//		{
-//			_movieClip.TextosCorrectos = Textos;
-//		}
-//		
-//		public  function CargarInstanciasCajas(InstaciasElementos:Array):void
-//		{
-//			_movieClip.ArrayCajas = InstaciasElementos;
-//		}
-//		
-//		public function ConfigurarCajas(CatidadCaracteres:int, restricPalabras:Array, BtnComprobar:*,escepcion:String):void
-//		{
-//			//pasamos la instancia del boton.
-//			_movieClip.instanciaBoton = BtnComprobar;
-//			
-//			_movieClip.instanciaBoton.buttonMode = true;
-//			Events.listener(_movieClip.instanciaBoton,MouseEvent.CLICK,fComparar)
-//			//_movieClip.instanciaBoton.addEventListener(MouseEvent.CLICK, fComparar);
-//			//trace(restricPalabras);
-//			//Configuramos las restricciones de las cajas.
-//			for (var ad in _movieClip.ArrayCajas)
-//			{
-//				_movieClip.ArrayCajas[ad].maxChars = CatidadCaracteres;
-//				_movieClip.ArrayCajas[ad].restrict = restricPalabras+escepcion;
-//				_movieClip.ArrayCajas[ad].tabIndex = ad;
-//				Events.listener(_movieClip.ArrayCajas[ad],FocusEvent.FOCUS_OUT,activar);
-//				Events.listener(_movieClip.ArrayCajas[ad],FocusEvent.FOCUS_IN,Reactividar);
-//				//_movieClip.ArrayCajas[ad].addEventListener(FocusEvent.FOCUS_OUT, activar);
-//				//_movieClip.ArrayCajas[ad].addEventListener(FocusEvent.FOCUS_IN, Reactividar);
-//			}
-//		
-//		}
-//		/*Funcion que permite resturar las cajas de texto a color negro*/
-//		public function Reactividar(e:Event):void
-//		{
-//			
-//			trace(e.target);
-//			if (e.target)
-//			{
-//				var posicion:int = _movieClip.ArrayCajas.indexOf(e.currentTarget);
-//				/*Desactivamos el borde de la caja*/
-//				_movieClip.ArrayCajas[posicion].border = false;
-//				//trace(ArrayCajas[posicion].text);
-//				
-//				if (_movieClip.ArrayCajas[posicion].text.length > 0)
-//				{
-//					
-//				}
-//				else
-//				{
-//					/*si la caja esta vacia restaura al color negro*/
-//					_movieClip.ArrayCajas[posicion].textColor = 0x000000;
-//				}
-//			}
-//		
-//		}
-//		
-//		public  function fComparar(e:MouseEvent):void
-//		{
-//			CodeCraft.getMainObject().stage.focus =e.target;
-//			for (var az in _movieClip.TextosCorrectos)
-//			{
-//				/*si la caja de texto esta vacia me la marca  de color rojo y no valida*/
-//				if (_movieClip.ArrayCajas[az].text == "")
-//				{
-//					_movieClip.ArrayCajas[az].border = true;
-//					_movieClip.ArrayCajas[az].borderColor = 0xFF0000;
-//				}
-//				else
-//				{
-//					/* de lo contrario valida todas las cajas de Texto con el array que contiene las  respuestas correctas*/
-//					if (_movieClip.TextosCorrectos[az].toUpperCase() == _movieClip.ArrayCajas[az].text.toUpperCase() || _movieClip.TextosCorrectos[az].toLowerCase() == _movieClip.ArrayCajas[az].text.toLowerCase())
-//					{
-//						_movieClip.ArrayCajas[az].textColor = 0x00ff00;// es correcta.
-//						//_movieClip.ArrayCajas[az].defaultTextFormat
-//						_movieClip.contadorbuenos++;//Suma los puntos.
-//						_movieClip.ArrayCajas[az].mouseEnabled = false;// no deja modificar.
-//						
-//					}
-//					else
-//					{
-//						/* Restaura el contador a 0 para que no entre a la comprobacion final */ 
-//						_movieClip.contadorbuenos = 0;
-//						//ArrayCajas[az].mouseEnabled=false;
-//						_movieClip.ArrayCajas[az].textColor = 0xff0000;// es mala.
-//						//ArrayCajas[az].mouseEnabled=true;
-//						_movieClip.ArrayCajas[az].selectable = true;
-//						
-//					}
-//					
-//				}
-//				
-//			}
-//		
-//		}
-//		/*Verifica que  todas las cajas de texto no esten vacias*/
-//		public function activar(e:Event):void
-//		{
-//			for (var d:int = 0; d < _movieClip.ArrayCajas.length; d++)
-//			{
-//				if (_movieClip.ArrayCajas[d].text != "")
-//				{
-//					
-//					if (_movieClip.contadorbuenos == _movieClip.ArrayCajas.length - 1)
-//					{
-//						/*si el contador buenos es igual a la cantidad de elementos -1 */
-//						/*cambiamos el index para que al precionar la tecla tab se dirija a el boton de Comparar no a la primera caja*/
-//						_movieClip.ArrayCajas[0].tabIndex = 2;
-//						_movieClip.instanciaBoton.tabIndex = 1;
-//						trace("cambia el estado");
-//						_movieClip.instanciaBoton.stage.stageFocusRect = false;
-//					}
-//				}
-//				
-//			}
-//			/*Valida que todas las cajas de texto sean correctas*/
-//			if (_movieClip.contadorbuenos == _movieClip.ArrayCajas.length)
-//			{
-//				for (var ah in _movieClip.TextosCorrectos)
-//				{
-//					trace("compueba");
-//					//ArrayCajas[ah].mouseEnabled=false;
-//					_movieClip.ArrayCajas[ah].selectable = false;
-//					_movieClip.ArrayCajas[ah].tabIndex = null;
-//				}
-//				
-//				CodeCraft.getMainObject().stage.focus = _movieClip.instanciaBoton;
-//			}
-//								
-//		
-//		}
-//		*/
 		
 		/****************************************************************************************
 		*

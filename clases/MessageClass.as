@@ -110,6 +110,9 @@ package clases
 			[
 				["is","are","are","is","are"],
 				["is","am","are","is","are"]
+			],
+			[
+				["I", "I", "I", "I", "he", "you", "I"]
 			]
 			
 		);

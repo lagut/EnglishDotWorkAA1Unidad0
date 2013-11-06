@@ -60,7 +60,7 @@ package clases
 		public function initializePresentation ():void 
 		{
 			//esta linea es temporar para asi poder realizar pruebas de multimedia y grabacion de memoria 
-			SystemClass.memoriaUsuario.data.escenaActual = "diccionario";
+			SystemClass.memoriaUsuario.data.escenaActual = "computador4";
 			//SystemClass.memoriaUsuario.data.nombre = "gato";
 			//se lee el archivo de memoria almacenada para verificar cargar el nuevo valor
 			if(SystemClass.memoriaUsuario.data.escenaActual == undefined)
